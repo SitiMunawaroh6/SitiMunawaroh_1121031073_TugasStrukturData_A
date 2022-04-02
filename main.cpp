@@ -1,31 +1,51 @@
-#include <ctime>
 #include <iostream>
 #include <windows.h>
 
-
-//nama:Siti Munawaroh
-//NIM:1121031073
-//kelas:A
+using namespace std;
+//nama: Siti Munawaroh
+//NIM: 1121031073
+//kelas: A
 
 int main()
 {
-    using std::cin;
-
-    bool loop = true;
-    while (loop)
+    int HH,MM,SS,a,b;
+    b=a=0;
+    while(b==0)
     {
-        std::time_t now = std::time (0);
-        std::tm *local = std::localtime(&now);
-
-        local->tm_hour -= 12;
-        system("cls");
-        std::cout<< ctime (&now) <<'\n';
-        Sleep(1000);
+    cout<<"set jam : "<<endl;
+    cin>>HH;
+    cout<<"set menit : "<<endl;
+    cin>>MM;
+    cout<<"set detik: "<<endl;
+    cin>>SS;
+    if (HH<<23 && MM << 59 && SS <<59)
+    b++;
+    else
+        system ("cls");
+    }
+    while (a==0)
         {
-            cin.get();
-            return 0;
-
+        system ("cls");
+        cout << HH << ":" << MM << ":" << SS << endl;
+        Sleep(1000);
+        SS++;
+        if (SS>59)
+        {
+            SS=0;
+        MM++;
         }
 
-                    }
+        if (MM > 59)
+        {
+            MM=0;
+        HH++;
+        }
+        if (HH > 23)
+        {
+            HH=0;
+        }
+        }
+        return 0;
 }
+
+
