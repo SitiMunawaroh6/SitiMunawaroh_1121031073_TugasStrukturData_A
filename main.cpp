@@ -1,10 +1,11 @@
+
 #include <iostream>
 #include <windows.h>
 
 using namespace std;
-//nama: Siti Munawaroh
-//NIM: 1121031073
-//kelas: A
+//nama: Tyas Awalin Nisa Magfiroh
+//NIM:1121031080
+//kelas:B
 
 int main()
 {
@@ -32,7 +33,7 @@ int main()
         if (SS>59)
         {
             SS=0;
-        MM++;
+       MM++;
         }
 
         if (MM > 59)
@@ -47,5 +48,4 @@ int main()
         }
         return 0;
 }
-
 
