@@ -3,9 +3,9 @@
 #include <windows.h>
 
 using namespace std;
-//nama: Tyas Awalin Nisa Magfiroh
-//NIM:1121031080
-//kelas:B
+//nama : Siti Munawaroh
+//NIM : 1121031073
+//kelas : A
 
 int main()
 {
@@ -36,12 +36,12 @@ int main()
        MM++;
         }
 
-        if (MM > 59)
+        if (MM>59)
         {
             MM=0;
         HH++;
         }
-        if (HH > 23)
+        if (HH>23)
         {
             HH=0;
         }
